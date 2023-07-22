@@ -1,102 +1,17 @@
+<!DOCTYPE html>
+<html>
 <head>
-
-    <meta charset="UTF-8">
-    <title>CodePen Demo</title> 
-  <style id="INLINE_PEN_STYLESHEET_ID">@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900&display=swap");
-  * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    background: #1f1f1f;
-    font-family: "Nunito Sans", sans-serif;
-  }
-  body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url("http://ashleydutton.co.uk/assets/images/noise.png");
-    opacity: 0.5;
-  }
-  
-  body {
-    width: 100vw;
-    height: 100vh;
-    float: left;
-    margin: 0;
-  }
-  
-  .h-scroll-container {
-    width: 100vw;
-    height: 100vh;
-    float: left;
-    overflow: hidden;
-  }
-  .h-scroll-container .horizontal-scroll {
-    width: 100vh;
-    height: 100vw;
-    float: left;
-    transform: rotate(-90deg) translate(-100%, 0);
-    overflow-x: hidden;
-    overflow-y: scroll;
-    transform-origin: top left;
-    margin-top: -17px;
-  }
-  .h-scroll-container .horizontal-scroll .h-inner-scroll {
-    width: auto;
-    height: 100vh;
-    float: left;
-    transform: rotate(90deg) translate(0, -100%);
-    transform-origin: top left;
-    padding: 0px 40px;
-    display: flex;
-  }
-  .h-scroll-container .horizontal-scroll .h-inner-scroll > div {
-    width: 400px;
-    height: auto;
-    float: none;
-    margin: 0;
-    padding: 46vh 100px;
-    line-height: 1;
-    font-size: 60px;
-    font-family: "Roboto", sans-serif;
-    letter-spacing: 5px;
-    font-weight: 800;
-    color: #fff;
-    text-decoration: none;
-    display: table-cell;
-  }
-  
-  .my-link {
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    z-index: 3;
-  }
-  .my-link p {
-    color: #fff;
-    font-weight: 100;
-    font-size: 14px;
-  }
-  .my-link p a {
-    color: #fff;
-    font-weight: 800;
-    text-decoration: none;
-    transition: all 0.35s ease;
-  }
-  .my-link p a:hover {
-    opacity: 0.5;
-  }</style></head>
-  
-  <body>
+    <title>Your Web Page Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- Add any CSS links or inline styles here -->
+</head>
+<body>
+    <!-- Your HTML content goes here -->
     <div class="h-scroll-container">
-    <div class="horizontal-scroll">
-        <div class="h-inner-scroll">
+        <div class="horizontal-scroll">
+            <div class="h-inner-scroll">
                 <div>item 1</div>
                 <div>item 2</div>
                 <div>item 3</div>
@@ -105,20 +20,9 @@
                 <div>item 6</div>
                 <div>item 7</div>
                 <div>item 8</div>
+            </div>
         </div>
     </div>
-  </div>
-  
-  <div class="my-link">
-    <p>
-      Made by
-      <a href="https://leanfourie.co.za" target="_blank">Léan Fourie</a>
-    </p>
-  </div>
-    
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="script.js"></script>
-<script src="https://cdpn.io/cpe/boomboom/pen.js?key=pen.js-320a7677-eda7-8852-2ae4-27002a7c9d3d" crossorigin=""></script>
-  
-  
-  </body>
+    <!-- Add any other HTML content here -->
+</body>
+</html>
