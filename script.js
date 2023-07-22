@@ -1,26 +1,43 @@
-var projectOne = document.getElementById("project1");
-var imgs = projectOne.querySelectorAll(".project");
-var imgLength = imgs.length;
+// var projectOne = document.getElementById("project1");
+// var imgs = projectOne.querySelectorAll(".project");
+// var imgLength = imgs.length;
 
-t = 0;
-var gap = 20;
-var tot = 0;
+// t = 0;
+// var gap = 20;
+// var tot = 0;
 
-// position each img next to each other
-for (var i = 0; i < imgLength; i++) {
-  var img = imgs[i];
+// // position each img next to each other
+// for (var i = 0; i < imgLength; i++) {
+//   var img = imgs[i];
 
-  if (i == 0) {
-    img.style.transform = "translate3D(" + tot + "px, -50%, 0)";
-  }
+//   if (i == 0) {
+//     img.style.transform = "translate3D(" + tot + "px, -50%, 0)";
+//   }
 
-  if (i > 0) {
-    var prev = imgs[i - 1];
-    var prevWidth = prev.clientWidth + gap;
-    tot += prevWidth;
-    img.style.transform = "translate3D(" + tot + "px, -50%, 0)";
-  }
-}
+//   if (i > 0) {
+//     var prev = imgs[i - 1];
+//     var prevWidth = prev.clientWidth + gap;
+//     tot += prevWidth;
+//     img.style.transform = "translate3D(" + tot + "px, -50%, 0)";
+//   }
+// }
+
+
+
+// // horizontal scroll
+// window.addEventListener("mousewheel", e => {
+// 	if (e.deltaX === 0) {
+// 		e.stopPropagation();
+// 		e.preventDefault();
+// 		window.scrollBy(e.deltaY, 0);
+// 	}
+// });
+
+// // tilt hover effect -> Tilt.js
+$("#scroller").simplyScroll();
+
+
+
 
 function scroll() {
   // check all images to see off left
@@ -51,3 +68,29 @@ function scroll() {
   requestAnimationFrame(scroll);
 }
 requestAnimationFrame(scroll);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
