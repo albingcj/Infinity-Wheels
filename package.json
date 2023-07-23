@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "express": "^4.18.2",
-    "swiper": "^10.0.4"
-  }
-}
