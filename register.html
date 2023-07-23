@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<!-- Bootstrap theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="style\loginStyle.css">
+	<title>login page</title>
+</head>
+
+<body class="bo">
+
+	<div class="navbar navbar-default">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="index.html" style="color:blue">Infinity wheels</a>
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse"
+				aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#" id="logout" style="display: none;">Log Out</a></li>
+			</ul>
+		</div>
+	</div>
+	<br>
+	<div class="container">
+
+		<form name="registration_form" id="registration_form" method="post" action="#" enctype="multipart/form-data">
+			<div class="row">
+
+				<div class="col-sm-4">
+					<div class="btn-Wraper">
+						<a href="login.html"><button type="button" class="btn ">Login</button></a>
+						<a href="register.html"><button type="button" class="btn ">Register</button></a>
+					</div>
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input type="text" name="email" id="email" class="form-control" placeholder="Enter your email">
+					</div>
+
+					<div class="form-group">
+						<label for="password">Password</label>
+						<input type="password" name="password" id="password" class="form-control"
+							placeholder="Enter your password">
+					</div>
+					<div class="btn-Wraper">
+						<button type="button" id="login" name="login" class="button-86" role="button">Register Now</button>
+					</div>
+
+				</div><!-- end col -->
+
+		</form>
+	</div><!--  end row -->
+	</div>
+	<br>
+
+</body>
+<script type="module">
+	// Import the functions you need from the SDKs you need
+	import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
+	import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-analytics.js";
+	import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
+	// TODO: Add SDKs for Firebase products that you want to use
+	// https://firebase.google.com/docs/web/setup#available-libraries
+
+	// Your web app's Firebase configuration
+	// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+	const firebaseConfig = {
+		apiKey: "AIzaSyBb6uZ8gLXSeLAYDigJBfYcdOBNLXjHJC4",
+		authDomain: "infinity-wheels-9d40b.firebaseapp.com",
+		projectId: "infinity-wheels-9d40b",
+		storageBucket: "infinity-wheels-9d40b.appspot.com",
+		messagingSenderId: "905577207718",
+		appId: "1:905577207718:web:ce1ebfb521ad70fc21a167",
+		measurementId: "G-ZCC5H5KN6D"
+	};
+
+	// Initialize Firebase
+	const app = initializeApp(firebaseConfig);
+	const analytics = getAnalytics(app);
+
+	const auth = getAuth();
+	console.log(app);
+
+
+
+	//----- New Registration code start	  
+	
+		//For new registration
+		  document.getElementById("login").addEventListener("click", function() {
+		  var email =  document.getElementById("email").value;
+		  var password = document.getElementById("password").value;
+		  //For new registration
+		  if (!email || !password) {
+    alert("Please fill in both email and password fields.");
+    return;
+  }
+		  createUserWithEmailAndPassword(auth, email, password)
+		  .then((userCredential) => {
+		    // Signed in 
+		    const user = userCredential.user;
+		    console.log(user);
+		    alert("Registration successfully!!");
+		    // ...
+		  })
+		  .catch((error) => {
+		    const errorCode = error.code;
+		    const errorMessage = error.message;
+		    // ..
+		    console.log(errorMessage);
+		    alert(error);
+		  });		  		  
+	  });
+	//----- End
+
+	//----- Login code start	  
+
+	//----- End
+
+	//----- Logout code start	  
+	document.getElementById("logout").addEventListener("click", function () {
+		signOut(auth).then(() => {
+			// Sign-out successful.
+			console.log('Sign-out successful.');
+			alert('Sign-out successful.');
+			document.getElementById('logout').style.display = 'none';
+		}).catch((error) => {
+			// An error happened.
+			console.log('An error happened.');
+		});
+	});
+	  //----- End
+
+</script>
+
+</html>
