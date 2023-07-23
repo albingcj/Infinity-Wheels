@@ -125,6 +125,7 @@ ul {
 
 .main-nav ul {
   display: flex;
+  justify-content: flex-end;
 }
 
 .main-nav ul li {
