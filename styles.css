@@ -57,24 +57,24 @@ body, html {
   
 /* Cards */
 .cards-container {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    height: 70%;
-    padding: 2% 5%;
-  }
-  
-  .card {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    flex: 1;
-    margin-right: 20px;
-    height: 100%; /* Set the height to 70% */
-  }
-  
-  .card:last-child {
-    margin-right: 0;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: 70%;
+  padding: 2% 5%;
+  padding-bottom: 8%;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  flex: 1;
+  margin-right: 50px; /* Increase the margin-right to create more distance between cards */
+  height: 100%; /* Set the height to 70% */
+}
+
+.card:last-child {
+  margin-right: 0;
+}
