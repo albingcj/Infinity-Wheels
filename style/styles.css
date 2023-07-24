@@ -8,14 +8,14 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #fff;
-  color: #000;
+  background: #000000;
+  color: #ebeae8;
   font-size: 15px;
   line-height: 1.5;
 }
 
 a {
-  color: #262626;
+  color: #ebeae8;
   text-decoration: none;
 }
 
@@ -41,6 +41,7 @@ ul {
 
 .main-nav .logo {
   width: 35px;
+  margin-left: 20px;
   /* max-height: 100%; */
 }
 
@@ -58,7 +59,7 @@ ul {
 }
 
 .main-nav ul li a:hover {
-  border-bottom: 2px solid #262626;
+  border-bottom: 2px solid #ff7878;
 }
 
 .main-nav ul.main-menu {
@@ -81,8 +82,8 @@ ul {
   border: 0;
   font-weight: bold;
   padding: 10px 20px;
-  background: #262626;
-  color: #fff;
+  background: #2d2d2d;
+  color: #ebeae8;
   font-size: 15px;;
 }
 
@@ -102,8 +103,8 @@ ul {
 /* Showcase */
 .showcase {
   width: 100%;
-  height: 80vh;
-  background: url('https://i.ibb.co/zGSDGCL/slide1.png') no-repeat center center/cover;
+  height: 97vh;
+  background: url('../images/herobg1.png') no-repeat center center/cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -112,6 +113,11 @@ ul {
   padding-bottom: 50px;
   margin-bottom: 20px;
 }
+
+In the above CSS rule, we changed the url() value in the background property to ../images/herobg1.png, which represents the relative path to the herobg1.png image from the location of the CSS file.
+
+Ensure that your CSS file and the images folder are located in the correct relative path to each other for this to work properly. When you use this CSS rule in your HTML with an element having the class .showcase, the background image will be set to herobg1.png.
+
 
 .showcase h2, .showcase p {
   margin-bottom: 10px;
@@ -336,10 +342,10 @@ ul {
 }
 
 .card {
-  background-color: #f8f8f8;
+  background-color: #030303;
   /* padding: 20px; */
   border-radius: 10px;
-  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 5px 9px rgb(140 94 228 / 16%);
   flex: 1;
   /* margin-right: 50px; */
   height: 100%;
