@@ -1,84 +1,4 @@
-/* body, html {
-    margin: 0;
-    padding: 0;
-  }
-  
-  div.section {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    color: #fff;
-  }
-  
-  #section1 {
-    background-color: #ff5733;
-  }
-  
-  #section2 {
-    background-color: #33ff57;
-  }
-  
-  #section3 {
-    background-color: #5733ff;
-  }
-  
-  
-  .navbar {
-    background-color: #333;
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2vh;
-  }
-  
-  .navbar-left {
-    padding-left: 2%;
-    display: flex;
-    align-items: center;
-  }
-  
-  .navbar-right {
-    display: flex;
-    align-items: center;
-    padding-right: 2%;
-  }
-  
-  .navbar a {
-    color: #fff;
-    text-decoration: none;
-    padding: 15px;
-  }
-  
 
-.cards-container {
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-  height: 70%;
-  padding: 2% 5%;
-  padding-bottom: 8%;
-}
-
-.card {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  flex: 1;
-  margin-right: 50px; 
-  height: 100%;
-}
-
-.card:last-child {
-  margin-right: 0;
-} 
-*/
 
 * {
   box-sizing: border-box;
@@ -182,7 +102,7 @@ ul {
 /* Showcase */
 .showcase {
   width: 100%;
-  height: 75vh;
+  height: 80vh;
   background: url('https://i.ibb.co/zGSDGCL/slide1.png') no-repeat center center/cover;
   display: flex;
   flex-direction: column;
@@ -234,6 +154,7 @@ ul {
 .sketchfab-embed-wrapper{
   display: flex;
   justify-content: center;
+  flex-flow: column-reverse;
 }
 
 /* Xbox */
@@ -419,9 +340,11 @@ ul {
   /* padding: 20px; */
   border-radius: 10px;
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1);
-  /* flex: 1; */
+  flex: 1;
   /* margin-right: 50px; */
   height: 100%;
+  /* min-width: 21%; */
+  min-height: 311px;
 }
 
 .card:last-child {
