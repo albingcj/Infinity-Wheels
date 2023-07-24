@@ -120,7 +120,8 @@ ul {
 }
 
 .main-nav .logo {
-  width: 110px;
+  width: 35px;
+  /* max-height: 100%; */
 }
 
 .main-nav ul {
@@ -202,7 +203,7 @@ ul {
 
 /* Home cards */
 .home-cards {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
   margin-bottom: 40px;
@@ -228,6 +229,11 @@ ul {
 
 .home-cards a:hover i {
   margin-left: 10px;
+}
+
+.sketchfab-embed-wrapper{
+  display: flex;
+  justify-content: center;
 }
 
 /* Xbox */
@@ -409,12 +415,12 @@ ul {
 }
 
 .card {
-  background-color: #fff;
+  background-color: #f8f8f8;
   /* padding: 20px; */
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  flex: 1;
-  /* margin-right: 50px;  */
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1);
+  /* flex: 1; */
+  /* margin-right: 50px; */
   height: 100%;
 }
 
