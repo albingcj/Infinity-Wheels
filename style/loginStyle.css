@@ -4,32 +4,39 @@ header{
 .bo{
   background-image: url('../images/carbg.jpg');
   background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
 }
+
+.logo{
+  width: 30px;
+  margin: 2rem;
+}
+
+
+
+
 .container{
   display: flex;
   justify-content: center;
+  margin-top: 5%;
 }
 .col-sm-4{
-  justify-content: center;
-  align-items: center;
-  
-  background: #ffff;
-  width: 248px;
-  min-width: 50%;
-  border-radius: 5px;
-  padding: 30px 20px;
-   margin-top: 15%;
-   margin: 0 auto;
+    /* justify-content: center; */
+    /* align-items: center; */
+    background: #171918;
+    width: 300px;
+    min-width: 50%;
+    border-radius: 5px;
+    padding: 30px 20px;
+    /* margin-top: 15%; */
+    margin: 0 auto;
 
 }
 
-/* Additional styles for the icon positioning */
 /* Additional styles for the icon positioning */
 .password-input {
     display: flex;
@@ -71,6 +78,13 @@ header{
 /* ... Existing CSS styles ... */
 
 /* CSS */
+
+
+#headh{
+  background-color: #ffffff00;
+  border-color: #ffffff00;
+}
+
 .button-86 {
   all: unset;
   width: 70px;

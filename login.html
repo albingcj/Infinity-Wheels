@@ -13,24 +13,13 @@
 
 <body class="bo">
 
-	<div class="navbar navbar-default" id="header">
-		<div class="navbar-header">
-			<a class="navbar-brand" href="index.html" style="color:blue">Infinity wheels</a>
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse"
-				aria-expanded="false" aria-controls="navbar">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-		</div>
-		<div class="navbar-collapse collapse">
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#" id="logout" style="display: none;">Log Out</a></li>
-			</ul>
-		</div>
+	<div class="navbar" id="headh">
+		<a class="navbar-br" href="index.html">
+			<img src="../images/infi-01.svg" alt="InfinityWheels" class="logo">
+
+		</a>
 	</div>
-	<br>
+
 
 	<div class="container">
 		<form name="login_form" id="login_form" method="post" action="#" enctype="multipart/form-data">
@@ -68,8 +57,6 @@
 
 
 	</div><!--  end row -->
-	</div>
-	<br>
 
 </body>
 <script type="module">
@@ -109,9 +96,9 @@
 		var email = document.getElementById("login_email").value;
 		var password = document.getElementById("login_password").value;
 		if (!email || !password) {
-    alert("Please fill in both email and password fields.");
-    return;
-  }
+			alert("Please fill in both email and password fields.");
+			return;
+		}
 		signInWithEmailAndPassword(auth, email, password)
 			.then((userCredential) => {
 				// Signed in 
