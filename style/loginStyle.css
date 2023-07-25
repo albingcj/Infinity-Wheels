@@ -17,8 +17,6 @@ header{
 }
 
 
-
-
 .container{
   display: flex;
   justify-content: center;
@@ -67,10 +65,10 @@ header{
     outline: none;
     border: none;
 }
-.btn-Wraper .btn:active{
-    outline: none;
-    border: none;
-}
+
+  .btn-Wraper .btn:hover {
+      transform: scale(0.9);
+  }
 .form-group{
     margin: 15px 0;
 }
