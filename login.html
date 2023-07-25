@@ -25,7 +25,7 @@
 		<form name="login_form" id="login_form" method="post" action="#" enctype="multipart/form-data">
 			<div class="col-sm-4">
 				<div class="btn-Wraper">
-					<a href="login.html"><button type="button" class="btn active">Login</button></a>
+					<a href="login.html"><button type="button" class="btn active" >Login</button></a>
 					<a href="register.html"><button type="button" class="btn">Register</button></a>
 				</div>
 				<div class="form-group">
@@ -91,6 +91,8 @@
 
 
 
+
+
 	//----- Login code start	  
 	document.getElementById("login").addEventListener("click", function () {
 		var email = document.getElementById("login_email").value;
@@ -130,19 +132,9 @@
 	// 		console.log('An error happened.');
 	// 	});
 	// });
-	document.querySelector(".eye").addEventListener("click", function () {
-		const passwordInput = document.getElementById("login_password");
-		const eyeIcon = document.querySelector(".eye");
 
-		if (passwordInput.type === "password") {
-			passwordInput.type = "text";
-			eyeIcon.src = "https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/external-eye-devices-flatart-icons-outline-flatarticons"; // Visible eye icon
-		} else {
-			passwordInput.type = "password";
-			eyeIcon.src = "https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/external-eye-devices-flatart-icons-outline-flatarticons"; // Hidden eye icon
-		}
-	});
-	  //----- End
+
+
 
 </script>
 
