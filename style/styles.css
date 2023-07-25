@@ -63,6 +63,7 @@ ul {
 .main-nav ul.main-menu {
   flex: 1;
   margin-left: 20px;
+  font-size: initial;
 }
 .main-menu li:nth-child(2) a {
   color: red;
@@ -165,13 +166,15 @@ ul {
 /* Xbox */
 .xbox {
   width: 100%;
-  height: 40vh;
+  height: 80vh;
   background-image: url("/images/premium-wallpaper.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  /* height: 500px; */
+  /* background-repeat: no-repeat;
+  height: 500px; */
   margin-bottom: 20px;
+
+  
 }
 
 .xbox .content {
