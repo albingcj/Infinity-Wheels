@@ -71,7 +71,7 @@ ul {
   margin-left: 20px;
   font-size: initial;
 }
-.main-menu li:nth-child(2) a {
+.main-menu li:nth-child(1) a {
   color: red;
 }
 
