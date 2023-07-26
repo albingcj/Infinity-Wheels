@@ -10,6 +10,12 @@ body {
   color: #ebeae8;
   font-size: 15px;
   line-height: 1.5;
+  /* overflow: 0; */
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem; /* Set a small width for the scrollbar (adjust as needed) */
+  background: transparent;
 }
 
 a {
